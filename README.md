@@ -1,10 +1,12 @@
  Puppeteer + Flask Scraper
 
-This project demonstrates how to use Node.js with Puppeteer to scrape content from a given website and serve the scraped data using a lightweight Python Flask server — all containerized via a multi-stage Docker build.
+This project demonstrates using Node.js with Puppeteer to scrape content from a given website and serve the scraped data using a lightweight Python Flask server — all containerized via a multi-stage Docker build.
 
 ---
 
  Features
+![py2](https://github.com/user-attachments/assets/54fa61de-45a4-493d-b01b-21647fbcd058)
+![py1](https://github.com/user-attachments/assets/47c5e792-b301-42bc-bbee-abeccb38a9e3)
 
 - Uses Puppeteer (Node.js) to perform headless browser scraping.
 - Scrapes dynamic websites by visiting the given URL and extracting basic data like title and heading.
@@ -32,9 +34,9 @@ cd puppeteer-flask-scraper
 bash
 Copy
 Edit
-docker build -t puppeteer-flask-scraper .
+docker build -t puppeteer-flask-scraper.
 3. Run the Container with a URL to Scrape
-You need to provide the URL to scrape using an environment variable SCRAPE_URL.
+You need to provide the URL to scrape using the environment variable SCRAPE_URL.
 
 bash
 Copy
@@ -46,7 +48,9 @@ Once the container is running, visit:
 arduino
 Copy
 Edit
-http://localhost:5000/
+http://localhost:5000/  or 
+http://public IP:5000/
+
 You’ll see the scraped output like:
 
 json
